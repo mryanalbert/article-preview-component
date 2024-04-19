@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+body {
+  font-family: "Manrope";
+}
+
+.bg-very-dark-grayish-blue {
+  background-color: hsl(217, 19%, 35%);
+}
+.text-very-dark-grayish-blue {
+  color: hsl(217, 19%, 35%);
+}
+
+.bg-desaturated-dark-blue {
+  background-color: hsl(214, 17%, 51%);
+}
+.text-desaturated-dark-blue {
+  color: hsl(214, 17%, 51%);
+}
+
+.bg-grayish-blue {
+  background-color: hsl(212, 23%, 69%);
+}
+.text-grayish-blue {
+  color: hsl(212, 23%, 69%);
+}
+
+.bg-light-grayish-blue {
+  background-color: hsl(210, 46%, 95%);
+}
+.text-light-grayish-blue {
+  color: hsl(210, 46%, 95%);
+}
+
+.tooltip::before {
+  content: "";
+  border: 12px solid;
+  border-color: #48556a #0000 #0000 #0000;
+  position: absolute;
+  top: 100%;
+}
+
+@media (max-width: 767px) {
+  .tooltip::before {
+    display: none;
+  }
+}
